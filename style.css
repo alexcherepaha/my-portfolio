@@ -1,4 +1,14 @@
 /* Загальні налаштування */
+html {
+  scroll-behavior: smooth; /* Плавна прокрутка при натисканні на кнопки */
+}
+
+/* Красиве виділення тексту */
+::selection {
+  background-color: #e74c3c;
+  color: #fff;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -80,8 +90,14 @@ h2 {
   padding: 20px;
   border-radius: 8px;
   background: #fafafa;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
+/* Ефект підйому картки при наведенні мишкою або тапі */
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
 .card h3 {
   margin-bottom: 10px;
   color: #34495e;
