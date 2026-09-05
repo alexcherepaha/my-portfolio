@@ -187,3 +187,25 @@ h2 {
     border-color: #444444;
   }
 }
+
+.theme-btn {
+  margin-top: 15px;
+  padding: 8px 16px;
+  border: 1px solid var(--text-color);
+  background: transparent;
+  color: var(--text-color);
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.theme-btn:hover {
+  opacity: 0.8;
+}
+
+body.dark-theme {
+  --bg-color: #121212;
+  --text-color: #e0e0e0;
+  --card-bg: #1e1e1e;
+}
