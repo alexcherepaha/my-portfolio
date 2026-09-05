@@ -32,6 +32,27 @@ body {
   margin: 0 auto;
 }
 
+header {
+  display: flex;
+  flex-direction: column; /* Розставляє елементи суворо вертикально один під одним */
+  align-items: center;    /* Вирівнює заголовок і кнопку по центру */
+  text-align: center;
+  padding: 40px 20px 20px;
+  gap: 12px;              /* Додає однаковий акуратний простір між кожним елементом */
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+  color: var(--text-color);
+}
+
+header p {
+  margin: 0;
+  font-size: 1.1rem;
+  opacity: 0.8;
+}
+
 /* Шапка / Hero */
 .hero {
   text-align: center;
