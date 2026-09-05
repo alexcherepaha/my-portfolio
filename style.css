@@ -169,43 +169,30 @@ h2 {
 }
 
 /* Автоматична темна тема (якщо в системі ввімкнено Dark Mode) */
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg-color: #121212;      /* Темний фон сайту */
-    --text-color: #e0e0e0;    /* Світлий текст */
-    --card-bg: #1e1e1e;       /* Темний фон для карток */
-  }
-
-  .card {
-    background-color: var(--card-bg);
-    border-color: #333333;
-  }
-
-  .skill-tag {
-    background-color: #2a2a2a;
-    color: #e0e0e0;
-    border-color: #444444;
-  }
+/* Базові змінні (світла тема за замовчуванням) */
+:root {
+  --bg-color: #ffffff;
+  --text-color: #2c3e50;
+  --card-bg: #fafafa;
+  --border-color: #e0e0e0;
 }
 
-.theme-btn {
-  margin-top: 15px;
-  padding: 8px 16px;
-  border: 1px solid var(--text-color);
-  background: transparent;
-  color: var(--text-color);
-  border-radius: 20px;
-  cursor: pointer;
-  font-size: 14px;
-  transition: all 0.3s ease;
-}
-
-.theme-btn:hover {
-  opacity: 0.8;
-}
-
+/* Стилі, які вмикаються при додаванні класу dark-theme */
 body.dark-theme {
   --bg-color: #121212;
   --text-color: #e0e0e0;
   --card-bg: #1e1e1e;
+  --border-color: #333333;
+}
+
+/* Застосування змінних до елементів */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.card {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
 }
