@@ -1,0 +1,123 @@
+/* Загальні налаштування */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f4f7f6;
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Шапка / Hero */
+.hero {
+  text-align: center;
+  padding: 40px 20px;
+  background: #2c3e50;
+  color: #fff;
+  border-radius: 12px;
+  margin-bottom: 30px;
+}
+
+.hero h1 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  color: #ecf0f1;
+  margin-bottom: 20px;
+}
+
+/* Кнопки */
+.btn {
+  display: inline-block;
+  background: #e74c3c;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #c0392b;
+}
+
+/* Секції */
+section, footer {
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  margin-bottom: 25px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+h2 {
+  color: #2c3e50;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #ecf0f1;
+  padding-bottom: 8px;
+}
+
+/* Картки проєктів (Flexbox) */
+.projects-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card {
+  border: 1px solid #e0e0e0;
+  padding: 20px;
+  border-radius: 8px;
+  background: #fafafa;
+}
+
+.card h3 {
+  margin-bottom: 10px;
+  color: #34495e;
+}
+
+.card p {
+  margin-bottom: 15px;
+  color: #666;
+}
+
+.card-link {
+  color: #2980b9;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.card-link:hover {
+  text-decoration: underline;
+}
+
+/* Контакти */
+.contacts .links {
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.contacts .links a {
+  color: #2c3e50;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 16px;
+  background: #ecf0f1;
+  border-radius: 6px;
+}
+
+.contacts .links a:hover {
+  background: #bdc3c7;
+}
